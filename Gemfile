@@ -10,6 +10,8 @@ end
 gem 'rails', '~> 5.1.4'
 gem 'foundation-rails'
 gem 'devise'
+gem 'redis', '~> 3.0.1'
+gem 'hiredis', '~> 0.6.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
