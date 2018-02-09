@@ -1,3 +1,5 @@
+
+
 $(window).load ->
   $('a[data-target]').click (e) ->
     e.preventDefault()

@@ -1,5 +1,7 @@
 class Movie < ApplicationRecord
-
+  has_many :purchases
+  has_many :buyers, through: :purchases
+  
   def poster
     "http://ia.media-imdb.com/images/M/#{poster_url}"
   end
@@ -15,4 +17,6 @@ class Movie < ApplicationRecord
       "Add to"
     end
   end
+
+
 end
