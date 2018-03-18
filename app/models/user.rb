@@ -25,6 +25,10 @@ class User < ApplicationRecord
   end
 
   def purchase(movie)
+    movies << movie unless purchase?(movie)
+  end
+
+  def purchase?(movie)
     movies.include?(movie)
   end
 
